@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 
 
-@dataclass(frozen=True)
+@dataclass(eq=True, frozen=True)
 class Incident:
     id: int
     type: str  # e.g., "infrastructure", "security", "application"
